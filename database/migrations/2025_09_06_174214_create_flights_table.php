@@ -7,7 +7,7 @@ return new class extends Migration {
     public function up(): void {
         Schema::create('flights', function (Blueprint $table) {
             $table->id();
-            $table->uuid('uuid')->unique()->after('id');
+            $table->char('uuid', 36);
             $table->foreignId('airline_id')->constrained('airlines')->onDelete('cascade');
             $table->string('flight_number');
             $table->foreignId('origin_airport_id')->constrained('airports')->onDelete('cascade');
