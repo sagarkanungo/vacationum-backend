@@ -7,7 +7,7 @@ use App\Http\Controllers\API\AirportController;
 use App\Http\Controllers\API\FlightController;
 use App\Http\Controllers\OfferController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\ProductController;
+use App\Http\Controllers\API\ProductController;
 
 
 Route::apiResource('products', ProductController::class);
